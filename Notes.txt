@@ -1,0 +1,41 @@
+		Step 1
+		Create database directory
+		Create the data directory where MongoDB stores data. MongoDB's default data directory path 
+		is the absolute path \data\db on the drive from which you start MongoDB.
+
+		From the Command Interpreter, create the data directories:
+
+		cd C:\
+		md "\data\db"
+
+		Step 2
+		To start MongoDB, run exe.
+		In the command prompt go to the following directory 
+		C:\Program Files\MongoDB\Server\6.0\bin\
+
+		Enter the following 
+		mongod.exe  --dbpath="c:\data\db"
+
+		Now MongoDB database server start running and displays the following message 
+		[initandlisten] waiting for connections
+
+		Step 3
+		To open the MongoDB shell, go the following directory in the new command prompt
+		C:\Program Files\MongoDB\Server\6.0\bin\
+
+		Enter mongo, mongoDB shell will open
+
+		Step 4
+		To see list of databases enter the following command in mongoDB shell opened in previous step
+		show dbs
+
+		Step 5
+		To create a new database enter the following command in mongoDB shell 
+		use tutorial_db
+
+
+
+
+
+
+
